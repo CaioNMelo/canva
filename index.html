@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canva Pro - Desbloqueie Seu Potencial Criativo</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body class="bg-white">
+    <!-- Header -->
+    <header class="bg-white/95 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 border-b border-gray-100">
+        <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <svg class="h-8 w-8 text-purple-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+                </svg>
+                <span class="text-2xl font-bold gradient-text">Canva Pro</span>
+            </div>
+            <button onclick="scrollToPricing()" class="gradient-bg text-white px-6 py-2 rounded-full font-semibold hover:shadow-lg transition-all duration-300 hover-scale">
+                Começar Agora
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 bg-gradient-to-br from-purple-50 via-blue-50 to-indigo-100 relative overflow-hidden">
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <div class="inline-flex items-center space-x-2 bg-gradient-to-r from-purple-100 to-blue-100 px-4 py-2 rounded-full mb-8 border border-purple-200">
+                <svg class="h-4 w-4 text-purple-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+                </svg>
+                <span class="text-sm font-medium text-purple-800">Oferta Limitada - 50% OFF</span>
+                <svg class="h-4 w-4 text-purple-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+                </svg>
+            </div>
+            
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                <span class="gradient-text">Desbloqueie Seu</span>
+                <br>
+                <span class="text-gray-800">Potencial Criativo</span>
+            </h1>
+            
+            <p class="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
+                Acesse mais de <strong>100 milhões</strong> de elementos premium, templates exclusivos e ferramentas profissionais que vão transformar suas ideias em designs incríveis.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+                <button onclick="scrollToPricing()" class="gradient-bg text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-xl transition-all duration-300 hover-scale flex items-center space-x-2">
+                    <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+                    </svg>
+                    <span>Ativar Canva Pro Agora</span>
+                    <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12H19M19 12L12 5M19 12L12 19"/>
+                    </svg>
+                </button>
+                <p class="text-sm text-gray-500">Acesso instantâneo</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                    Escolha seu <span class="gradient-text">plano</span>
+                </h2>
+                <p class="text-xl text-gray-600">Investimento que se paga com o primeiro projeto</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+                <div class="bg-gray-50 p-8 rounded-3xl border-2 border-gray-200">
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Canva Free</h3>
+                        <div class="text-4xl font-bold text-gray-800 mb-2">R$ 0</div>
+                        <p class="text-gray-600">Para sempre</p>
+                    </div>
+                    
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center space-x-3">
+                            <svg class="h-5 w-5 text-green-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17L4 12"/>
+                            </svg>
+                            <span>Templates básicos</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <svg class="h-5 w-5 text-green-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17L4 12"/>
+                            </svg>
+                            <span>5GB de armazenamento</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <svg class="h-5 w-5 text-green-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17L4 12"/>
+                            </svg>
+                            <span>Elementos limitados</span>
+                        </li>
+                    </ul>
+                    
+                    <button class="w-full bg-gray-200 text-gray-800 py-3 rounded-full font-semibold hover:bg-gray-300 transition-colors">
+                        Continuar Grátis
+                    </button>
+                </div>
+                
+                <div class="gradient-bg p-8 rounded-3xl text-white relative overflow-hidden transform scale-105">
+                    <div class="absolute top-4 right-4 bg-yellow-400 text-yellow-900 px-3 py-1 rounded-full text-sm font-bold">
+                        MAIS POPULAR
+                    </div>
+                    
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-bold mb-2 flex items-center justify-center space-x-2">
+                            <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+                            </svg>
+                            <span>Canva Pro</span>
+                        </h3>
+                        <div class="flex items-center justify-center space-x-2 mb-2">
+                            <div class="text-4xl font-bold">R$ 10,00</div>
+                        </div>
+                        <p class="text-white/80">por ano</p>
+                    </div>
+                    
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center space-x-3">
+                            <svg class="h-5 w-5 text-green-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17L4 12"/>
+                            </svg>
+                            <span>100M+ elementos premium</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <svg class="h-5 w-5 text-green-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17L4 12"/>
+                            </svg>
+                            <span>1TB de armazenamento</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <svg class="h-5 w-5 text-green-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17L4 12"/>
+                            </svg>
+                            <span>IA para remoção de fundo</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <svg class="h-5 w-5 text-green-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17L4 12"/>
+                            </svg>
+                            <span>Downloads ilimitados em HD</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <svg class="h-5 w-5 text-green-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17L4 12"/>
+                            </svg>
+                            <span>Redimensionamento mágico</span>
+                        </li>
+                    </ul>
+                    
+                    <button onclick="window.open('https://pay.cakto.com.br/9gEcQ7L', '_blank')" class="w-full bg-white text-purple-600 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-colors flex items-center justify-center space-x-2">
+                        <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+                        </svg>
+                        <span>Assinar Agora</span>
+                    </button>
+                    
+                    <p class="text-center text-white/70 text-sm mt-4">
+                        <svg class="h-4 w-4 inline mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                        Garantia de 30 dias
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/551151974268" target="_blank" rel="noopener noreferrer" class="whatsapp-button fixed bottom-8 right-8 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300 hover-scale z-50">
+        <div class="whatsapp-tooltip absolute right-16 top-1/2 -translate-y-1/2 bg-white text-green-600 px-4 py-2 rounded-lg shadow-lg whitespace-nowrap">
+            Tire suas dúvidas aqui!
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

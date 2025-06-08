@@ -1,0 +1,59 @@
+/* Estilos personalizados */
+.gradient-text {
+    background: linear-gradient(to right, #9333ea, #3b82f6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gradient-bg {
+    background: linear-gradient(to right, #9333ea, #3b82f6);
+}
+
+.hover-scale {
+    transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.05);
+}
+
+.whatsapp-tooltip {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.whatsapp-button:hover .whatsapp-tooltip {
+    opacity: 1;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    .gradient-bg {
+        padding: 0.75rem 1.5rem;
+    }
+} 
